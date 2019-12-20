@@ -24,51 +24,50 @@ Projetos do Github
 
 Organização do projeto
 ------------
-
-    ├── LICENÇA
-    Make── Makefile <- Makefile com comandos como `make data` ou` make train`
-    RE── README.md <- O README de nível superior para desenvolvedores que usam este projeto.
-    ├── dados
-    External ├── externo <- Dados de fontes de terceiros.
-    Inter ├── interim <- Dados intermediários que foram transformados.
-    Processed ├── processado <- Os conjuntos de dados canônicos finais para modelagem.
-    Raw └── raw <- O despejo de dados imutável original.
-    │
-    Doc── docs <- Um projeto padrão do Sphinx; veja sphinx-doc.org para detalhes
-    │
-    Models── modelos <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
-    │
-    ├── cadernos <- cadernos Jupyter. Convenção de nomenclatura é um número (para pedidos),
-    Initial as iniciais do criador e uma breve descrição delimitada por `-`, p.
-    │ `1.0-jqp-initial-data-exploração`.
-    │
-    ├── referências <- Dicionários de dados, manuais e todos os outros materiais explicativos.
-    │
-    ├── reports <- Análise gerada como HTML, PDF, LaTeX, etc.
-    │ └── figuras <- Gráficos e figuras gerados para serem usados ​​nos relatórios
-    │
-    ├── requirements.txt <- O arquivo de requisitos para reproduzir o ambiente de análise, por exemplo
-    │ gerado com `pip freeze> requirements.txt`
-    │
-    Setup── setup.py <- torna o pip do projeto instalável (pip install -e.) Para que o src possa ser importado
-    Sr── src <- Código fonte para uso neste projeto.
-    │ ├── __init__.py <- Torna o src um módulo Python
-    │ │
-    │ ├── data <- scripts para baixar ou gerar dados
-    Make │ └── make_dataset.py
-    │ │
-    Features ├── features <- Scripts para transformar dados brutos em recursos para modelagem
-    Build │ └── build_features.py
-    │ │
-    │ ├── modelos <- scripts para treinar modelos e depois usar modelos treinados para criar
-    │ │ │ previsões
-    │ │ ├── predict_model.py
-    _ │ └── train_model.py
-    │ │
-    │ └── visualização <- scripts para criar visualizações exploratórias e orientadas a resultados
-    Visualize └── visualize.py
-    │
-    Tox── arquivo tox.ini <- tox com configurações para executar o tox; veja tox.testrun.org
+├── LICENSE
+├── Makefile           <- Makefile with commands like `make data` or `make train`
+├── README.md          <- The top-level README for developers using this project.
+├── data
+│   ├── external       <- Data from third party sources.
+│   ├── interim        <- Intermediate data that has been transformed.
+│   ├── processed      <- The final, canonical data sets for modeling.
+│   └── raw            <- The original, immutable data dump.
+│
+├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models             <- Trained and serialized models, model predictions, or model summaries
+│
+├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+│                         the creator's initials, and a short `-` delimited description, e.g.
+│                         `1.0-jqp-initial-data-exploration`.
+│
+├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+│                         generated with `pip freeze > requirements.txt`
+│
+├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+├── src                <- Source code for use in this project.
+│   ├── __init__.py    <- Makes src a Python module
+│   │
+│   ├── data           <- Scripts to download or generate data
+│   │   └── make_dataset.py
+│   │
+│   ├── features       <- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models         <- Scripts to train models and then use trained models to make
+│   │   │                 predictions
+│   │   ├── predict_model.py
+│   │   └── train_model.py
+│   │
+│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+│       └── visualize.py
+│
+└── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
 
 --------
