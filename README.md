@@ -1,76 +1,76 @@
-Advances in Financial Machine Learning Exercises
+Avanços nos exercícios de aprendizado de máquina financeiro
 ==============================
 
-Experimental solutions to selected exercises from the book [Advances in Financial Machine Learning by Marcos Lopez De Prado](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109)
+Soluções experimentais para exercícios selecionados do livro [Avanços no aprendizado de máquinas financeiras de Marcos Lopez De Prado] (https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109)
 
-Make sure to use `python setup.py install` in your environment so the `src` scripts which include `bars.py` and `snippets.py` can be found by the jupyter notebooks and other scripts you may develop.
+Certifique-se de usar o `python setup.py install` em seu ambiente, para que os scripts` src`, que incluem `bars.py` e` snippets.py`, possam ser encontrados pelos blocos de anotações do jupyter e outros scripts que você possa desenvolver.
 
-## Additional AFML Projects and Resources
-There are other github projects and links that people share that are inspired by the book. I'd like to collect them here to share with others in the spirit of collaboration and idea sharing. If you have more to add please let me know. 
+## Projetos e recursos adicionais da AFML
+Existem outros projetos e links do github que as pessoas compartilham e que são inspirados no livro. Eu gostaria de colecioná-los aqui para compartilhar com outras pessoas no espírito de colaboração e compartilhamento de idéias. Se você tiver mais a acrescentar, entre em contato.
 
-### Github Projects
+Projetos do Github
 
-- [The Open Source Hedge Fund Project](http://www.quantsportal.com/the-open-source-hedge-fund-project/)
-	- [Github MLFinLab Repo](https://github.com/hudson-and-thames/mlfinlab)
-	- [Github Notebooks](https://github.com/hudson-and-thames/research)
+- [The Open Source Hedge Fund Project] (http://www.quantsportal.com/the-open-source-hedge-fund-project/)
+- [Github MLFinLab Repo] (https://github.com/hudson-and-thames/mlfinlab)
+- [Notebooks Github] (https://github.com/hudson-and-thames/research)
 
-- [rspadim Github](https://github.com/rspadim/Adv_Fin_ML/)
+- [rspadim Github] (https://github.com/rspadim/Adv_Fin_ML/)
 
-### Article Links
+### Links de artigos
 
-- [Financial Machine Learning Part 0: Bars by Maks Ivanov](https://towardsdatascience.com/financial-machine-learning-part-0-bars-745897d4e4ba)
-- [Deflated Sharpe Ratio](https://gmarti.gitlab.io/qfin/2018/05/30/deflated-sharpe-ratio.html) - [Gautier Marti blog](https://gmarti.gitlab.io/)
+- [Aprendizado de máquina financeira parte 0: barras de Maks Ivanov] (https://towardsdatascience.com/financial-machine-learning-part-0-bars-745897d4e4ba)
+- [Taxa de Sharpe deflacionada] (https://gmarti.gitlab.io/qfin/2018/05/30/deflated-sharpe-ratio.html) - [Blog do Gautier Marti] (https://gmarti.gitlab.io/ )
 
 
-Project Organization
+Organização do projeto
 ------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+    ├── LICENÇA
+    Make── Makefile <- Makefile com comandos como `make data` ou` make train`
+    RE── README.md <- O README de nível superior para desenvolvedores que usam este projeto.
+    ├── dados
+    External ├── externo <- Dados de fontes de terceiros.
+    Inter ├── interim <- Dados intermediários que foram transformados.
+    Processed ├── processado <- Os conjuntos de dados canônicos finais para modelagem.
+    Raw └── raw <- O despejo de dados imutável original.
+    │
+    Doc── docs <- Um projeto padrão do Sphinx; veja sphinx-doc.org para detalhes
+    │
+    Models── modelos <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
+    │
+    ├── cadernos <- cadernos Jupyter. Convenção de nomenclatura é um número (para pedidos),
+    Initial as iniciais do criador e uma breve descrição delimitada por `-`, p.
+    │ `1.0-jqp-initial-data-exploração`.
+    │
+    ├── referências <- Dicionários de dados, manuais e todos os outros materiais explicativos.
+    │
+    ├── reports <- Análise gerada como HTML, PDF, LaTeX, etc.
+    │ └── figuras <- Gráficos e figuras gerados para serem usados ​​nos relatórios
+    │
+    ├── requirements.txt <- O arquivo de requisitos para reproduzir o ambiente de análise, por exemplo
+    │ gerado com `pip freeze> requirements.txt`
+    │
+    Setup── setup.py <- torna o pip do projeto instalável (pip install -e.) Para que o src possa ser importado
+    Sr── src <- Código fonte para uso neste projeto.
+    │ ├── __init__.py <- Torna o src um módulo Python
+    │ │
+    │ ├── data <- scripts para baixar ou gerar dados
+    Make │ └── make_dataset.py
+    │ │
+    Features ├── features <- Scripts para transformar dados brutos em recursos para modelagem
+    Build │ └── build_features.py
+    │ │
+    │ ├── modelos <- scripts para treinar modelos e depois usar modelos treinados para criar
+    │ │ │ previsões
+    │ │ ├── predict_model.py
+    _ │ └── train_model.py
+    │ │
+    │ └── visualização <- scripts para criar visualizações exploratórias e orientadas a resultados
+    Visualize └── visualize.py
+    │
+    Tox── arquivo tox.ini <- tox com configurações para executar o tox; veja tox.testrun.org
 
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p> <small> Projeto baseado no <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/"> modelo de projeto de ciência de dados do cookiecutter </a>. #cookiecutterdatascience </small> </p>
